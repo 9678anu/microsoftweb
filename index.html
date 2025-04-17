@@ -1,16 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16999912398">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16999912398');
-</script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Microsoft Support Helpline</title>
@@ -20,40 +10,41 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Helvetica', sans-serif;
+            font-family: 'Segoe UI', 'Arial', sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #e0eafc, #cfdef3);
-            color: #1e3a8a;
+            background: linear-gradient(135deg, #e6f0fa, #b3d4fc);
+            color: #0033a0;
             line-height: 1.6;
             padding: 0;
         }
 
         /* Header */
         header {
-            background-color: #1e3a8a;
-            color: #fff;
+            background-color: #e6f0fa;
+            color: #000;
             text-align: center;
-            padding: 50px 20px;
+            padding: 60px 20px;
             position: relative;
             overflow: hidden;
         }
 
         header img {
-            width: 200px;
+            width: 180px;
             margin-bottom: 15px;
+            filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
         }
 
         header h1 {
-            font-size: 2.5rem;
+            font-size: 2.8rem;
             margin-bottom: 10px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         /* Main Content */
         .main-content {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
         }
@@ -61,138 +52,147 @@
         /* Section Styling */
         .section {
             background-color: #fff;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
         }
 
         .section h2 {
-            font-size: 1.6rem;
-            color: #1e3a8a;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 5px;
+            font-size: 1.8rem;
+            color: #0033a0;
+            margin-bottom: 12px;
+            border-bottom: 3px solid #3399ff;
+            padding-bottom: 8px;
         }
 
         .section p {
-            font-size: 1.1rem;
-            color: #4b5e7e;
+            font-size: 1.15rem;
+            color: #333;
             margin-bottom: 15px;
         }
 
         .section a {
             display: inline-block;
-            color: #1e3a8a;
+            color: #0066cc;
             text-decoration: none;
-            font-weight: bold;
+            font-weight: 600;
             margin-top: 10px;
             transition: color 0.3s ease;
         }
 
         .section a:hover {
-            color: #2a5298;
+            color: #0033a0;
+            text-decoration: underline;
         }
 
         /* Contact Banner */
         .contact-banner {
-            background-color: #1e3a8a;
+            background: linear-gradient(135deg, #3399ff, #0066cc);
             color: #fff;
             text-align: center;
-            padding: 25px;
-            margin: 20px 0;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .contact-banner p {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-bottom: 15px;
         }
 
         .contact-banner a {
-            margin-top: 10px;
-            background-color: #e0eafc;
-            color: #1e3a8a;
-            padding: 10px;
+            background-color: #fff;
+            color: #0066cc;
+            padding: 12px 24px;
+            border-radius: 5px;
             text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .contact-banner a:hover {
-            color: #1e3a8a;
-            background-color: #f0f0f0;
-            text-decoration: underline;
+            background-color: #e6f0fa;
+            color: #0033a0;
         }
 
         /* Important Info Section */
         .important-info {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            margin: 20px 0;
+            background-color: #f9f9f9;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin: 25px 0;
         }
 
         .important-info h2 {
-            font-size: 1.6rem;
-            color: #1e3a8a;
-            margin-bottom: 10px;
+            font-size: 1.8rem;
+            color: #0033a0;
+            margin-bottom: 12px;
         }
 
         .important-info p {
-            font-size: 1rem;
-            color: #4b5e7e;
+            font-size: 1.1rem;
+            color: #333;
         }
-
+        .important-info a{
+            color: #0066cc;
+            text-decoration: none;
+            font-weight: 600;
+        }
         /* Footer */
         footer {
-            background: linear-gradient(135deg, #1e3a8a, #2a5298);
+            background: linear-gradient(135deg, #0066cc, #0033a0);
             color: #fff;
             text-align: center;
-            padding: 30px 20px;
-            margin-top: 40px;
+            padding: 40px 20px;
+            margin-top: 50px;
             position: relative;
         }
 
         footer p {
-            font-size: 1rem;
-            margin-top: 5px;
+            font-size: 1.1rem;
+            margin-top: 8px;
         }
 
         footer::before {
             content: '';
             position: absolute;
-            top: -20px;
+            top: -30px;
             left: 0;
             width: 100%;
-            height: 20px;
-            background: linear-gradient(to top, rgba(30, 58, 138, 0), #1e3a8a);
+            height: 30px;
+            background: linear-gradient(to top, rgba(0, 51, 160, 0), #0066cc);
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2rem;
+                font-size: 2.2rem;
             }
 
             .section h2 {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
             }
 
             .contact-banner p {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
             }
 
             .important-info h2 {
-                font-size: 1.4rem;
+                font-size: 1.6rem;
             }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png" alt="Microsoft Logo" width="200px">
+        <img src="https://cdn.pixabay.com/photo/2013/02/12/09/07/microsoft-80658_1280.png" alt="Microsoft Logo" width="180px">
         <h1>Microsoft Support Helpline - Available 24/7</h1>
     </header>
 
@@ -208,9 +208,7 @@
             <p>We also offer helpful tips and educational resources to enhance your experience with Microsoft services. If you're new, visit our Help Center to explore easy-to-follow guides and solutions.</p>
             <a href="tel:+1(855)-574-4604">Customer Support: +1(855)-574-4604</a>
         </div>
-        <h1>
-            Secure Account & Payment Assistance
-        </h1>
+        <h1>Secure Account & Payment Assistance</h1>
         <div class="section">
             <h2>Protecting Your Information</h2>
             <p>When you securely link your card or bank account to your Microsoft account, you only need to do it once. Our security systems safeguard your credentials so you can shop and manage your services worry-free—without exposing your payment details to third parties.</p>
@@ -223,14 +221,10 @@
 
         <div class="section">
             <h2>Always-On Fraud Monitoring</h2>
-            <p>Security is a top priority. Our system monitors all accounts and transactions 24/7 to detect and stop fraud, phishing attempts, and identity theft. With over 2,000 fraud prevention experts on standby, you’re always covered.
-
-            </p>
+            <p>Security is a top priority. Our system monitors all accounts and transactions 24/7 to detect and stop fraud, phishing attempts, and identity theft. With over 2,000 fraud prevention experts on standby, you’re always covered.</p>
             <a href="tel:+1(855)-574-4604" style="float: right;">Help Support: +1(855)-574-4604</a><br>
         </div>
-            <h1>
-                Our Commitment to Security
-            </h1>
+        <h1>Our Commitment to Security</h1>
         <div class="section">
             <h2>Advanced Threat Protection</h2>
             <p>Our advanced behavioral risk management system actively defends against external threats, providing peace of mind when you shop, sell, or manage your account.</p>
@@ -252,24 +246,19 @@
             <h2>Disclaimer:</h2>
             <p>Shop New AVS is an independent online store offering computer peripherals and software. All listed products are genuine and supported by their original manufacturers. We comply fully with the FTC’s Mail, Internet, or Telephone Order Merchandise Rule to ensure secure and transparent transactions.</p>
             <p>While our products are authentic and sourced from authorized distributors, Shop New AVS is not officially affiliated with or endorsed by Microsoft or other mentioned brands. Some items may also be available through the official websites of respective brand owners.</p>
-            <p>Due to recent policy updates from Microsoft, we have revised our payment and refund procedures. For full details, please refer to our [Buying & Refund Policy] on our website.
-
-            </p>
+            <p>Due to recent policy updates from Microsoft, we have revised our payment and refund procedures. For full details, please refer to our [Buying & Refund Policy] on our website.</p>
         </div>
 
         <div class="important-info">
-            <h2>Need Assistance?
-            </h2>
-            <p>Please read our Terms & Conditions and Privacy Policy before using our services.
-                For help, visit our Help Center or contact customer support directly.</p>
-                <a href="tel:+1(855)-574-4604">Customer Support: +1(855)-574-4604</a>
-  
+            <h2>Need Assistance?</h2>
+            <p>Please read our Terms & Conditions and Privacy Policy before using our services. For help, visit our Help Center or contact customer support directly.</p>
+            <a href="tel:+1(855)-574-4604">Customer Support: +1(855)-574-4604</a>
         </div>
     </div>
 
     <footer>
         <p>Contact Us: For assistance, visit our Help Center or contact our customer support team.</p>
-        <p>© 2025 Microsoft All rights reserved.</p>
+        <p>© 2025 Microsoft. All rights reserved.</p>
     </footer>
 </body>
 </html>
